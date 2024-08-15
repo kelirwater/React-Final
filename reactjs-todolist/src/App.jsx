@@ -37,10 +37,6 @@ function App() {
   }
 
   useEffect(() => {
-    if (!localStorage) {
-      return;
-    }
-
     let localTodos = localStorage.getItem("todos");
     if (!localTodos) {
       return;
